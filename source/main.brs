@@ -18,8 +18,7 @@ Sub Main(args As Dynamic)
         'bitrates  = [2048]    ' >=1.1Mbps = 4 dots
         bitrates  = [0]
 
-        ' sample -- DELETE ONCE WORKING WITH args
-        'urls = ["http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"]
+        'might be able to get rid of these ones
         qualities = ["SD"]
         streamformat = "hls"
 
