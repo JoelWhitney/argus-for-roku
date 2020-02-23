@@ -22,3 +22,4 @@
 
 # Resources
 - https://developer.roku.com/en-gb/docs/references/references-overview.md
+- https://developer.roku.com/en-gb/docs/developer-program/debugging/external-control-api.md
