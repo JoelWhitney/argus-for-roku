@@ -28,8 +28,8 @@ Private published "Argus for Roku" app link examples
 - Install: `curl -d '' 'http://192.168.0.133:8060/install/578841'`
 - Launch: `curl -d '' 'http://192.168.0.133:8060/launch/578841'`
 - Open to video content:
-   - `curl -d '' 'http://192.168.0.133:8060/launch/dev?streamformat=hsl&url=http%3A%2F%2Fdevimages.apple.com%2Fiphone%2Fsamples%2Fbipbop%2Fbipbopall.m3u8'`
-   - `curl -d '' 'http://192.168.0.133:8060/launch/dev?streamformat=mp4&url=http%3A%2F%2Fvideo.ted.com%2Ftalks%2Fpodcast%2FVilayanurRamachandran_2007_480.mp4'`
+   - `curl -d '' 'http://192.168.0.133:8060/launch/578841?streamformat=hsl&url=http%3A%2F%2Fdevimages.apple.com%2Fiphone%2Fsamples%2Fbipbop%2Fbipbopall.m3u8'`
+   - `curl -d '' 'http://192.168.0.133:8060/launch/578841?streamformat=mp4&url=http%3A%2F%2Fvideo.ted.com%2Ftalks%2Fpodcast%2FVilayanurRamachandran_2007_480.mp4'`
 
 # Resources
 - [Roku/Brightscript API doc](https://developer.roku.com/en-gb/docs/references/references-overview.md)
