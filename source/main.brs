@@ -19,7 +19,7 @@ Sub Main(args As Dynamic)
         bitrates  = [0]
 
         'might be able to get rid of these ones
-        qualities = ["SD"]
+        qualities = ["HD"]
         streamformat = "hls"
 
         if type(args.url) = "roString" and args.url <> "" then
@@ -38,15 +38,24 @@ Sub Main(args As Dynamic)
         else
             srt = ""
         end if
+        srt = ""
 
         videoclip = CreateObject("roAssociativeArray")
         videoclip.StreamBitrates = bitrates
         videoclip.StreamUrls = urls
         videoclip.StreamQualities = qualities
         videoclip.StreamFormat = StreamFormat
+        videoclip.SwitchingStrategy = "full-adaptation"
         videoclip.Title = title
 
+        print "srt = ";srt
+        if srt <> invalid and srt <> "" then
+          videoclip.SubtitleUrl = srt
+        end if
+
         video.SetContent(videoclip)
+        video.SetCertificatesFile("common:/certs/ca-bundle.crt")
+	      video.SetCertificatesDepth(3)
         video.show()
 
         lastSavedPos   = 0
@@ -71,7 +80,7 @@ Sub Main(args As Dynamic)
                 else if msg.isRequestFailed()
                     print "play failed: "; msg.GetMessage()
                 else
-                    print "Unknown event: "; msg.GetType(); " msg: "; msg.GetMessage()
+                    print "Unknown event: "; msg.GetType(); " msg: "; msg.GetMessage(); " info: " msg.GetInfo()
                 endif
             end if
         end while
