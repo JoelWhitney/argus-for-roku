@@ -35,3 +35,8 @@ Private published "Argus for Roku" app link examples
 - [Roku/Brightscript API doc](https://developer.roku.com/en-gb/docs/references/references-overview.md)
 - [Publishing private channels](https://developer.roku.com/docs/developer-program/publishing/channel-publishing-guide.md#non-certified-channels)
 - [ECP API doc](https://developer.roku.com/en-gb/docs/developer-program/debugging/external-control-api.md)
+
+# M3U8 issue Resources
+- [M3U8 roVideoScreen support details](https://developer.roku.com/docs/references/brightscript/components/rovideoscreen.md)
+- ["No valid bitrates"](https://community.roku.com/t5/Roku-Developer-Program/quot-No-valid-bitrates-quot-error-with-HLS-playlist/td-p/528145)
+- ["M3U8 not playing"](https://community.roku.com/t5/Roku-Developer-Program/Adobe-Media-Server-5-HLS-Adaptive/td-p/370337)
